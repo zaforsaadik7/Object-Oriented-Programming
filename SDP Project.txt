@@ -1,0 +1,52 @@
+write a c++ program for shoping system. the  fuctionalities of this program is given bellow-
+
+first ask the user if he is a 1.buyer or 2.seller aka administrator. if the user input is 1 then do the followings: 
+
+first, there will be two options sign in and log in in the  terminal to dispaly. 
+
+1.sign up: first the buyer have to sign up into this program. when the buyer select the sign up option, it'll access the the fuction called sign up. in the function, the program will ask the buyer for his name, phone number, 
+his present address, a favourite food that he like and lastly a password. the fuction will create a new txt file whose name will be same as the buyer's name_phone number.txt i.e "John_123456.txt" so that each file is different for each
+buyer and all these data will be save in that file. all the files will be save in a specific derectory so that for the log in fuction when the program needs to access the files it can find them easily. 
+
+2. log in: if the buyer chooses the log in fuction, then he will be asked for his name and number. if the name or number doesn't matches to any file name then it'll ask the buyer to try agian.if the given data mataches to a specific 
+file name then it'll ask for his password,  and it'll access the file and see if the password is correct or not. if the password matches then it'll go to the display function which is written detaily in the next point. if the password 
+does not matches then it'll give the users two option- 
+
+2.1. forgotten password: it'll ask the buyer for his favourite food and his present address. if the answer is correct then it'll go to the display function or if the answer is wrong then the function will be terminated. 
+2.2. sing up for a new account: it'll go to the first sign up option.
+
+
+3.dispaly option: after loging in, here when the buyer run the program he will see the following option. the buyer can choose from these options as he likes
+
+3.1.product cataloge: if the buyer choose this option then it'll open a csv file name "product cataloge.csv" (where all the products name, prices, and amouny of the  each product will be saved) will be displayed in 
+alphabetical ascending order with a number also.the price will be also shown in  the first bracket beside each product for example-
+1.apple(30 taka)
+2.ball(20 taka)
+3.chips(15 taka)
+the program will ask for the number of a product. when the buyer input a product it'll ask the buyer if he wants add it to the chart or to the wishlist. after adding the product to the cart or the wishlist(these functions are expalained 
+bellow),if the buyer wants to add to the cart then ask "how many do you want to buy?" the program will agian ask the buyer if he wants to buy more? if the answer is yes then the program will again go to the product cataloge or it'll go 
+to the display option. after adding a product to the cart every time, reduce the amount of product by the number of products the buyer has bought.
+
+
+3.2.add to cart system: here we will have two things a string to save the list of products and a variable to count the total bill, called "total_bill". the size of the string will depend on how many products the buyer has added to the cart. 
+every time the buyer adds a product to the cart the bill will be added to the variable. if the user selects this option from the display function then the fuction will ask the buyer if he wants to- 
+
+3.2.1.see his cart: this option will display the buyer products that he added to the cart. if he added nothing the function will display "You have nothing on the cart."
+ 
+3.2.3.romove from the cart:this option first show the pruduct that the buyer has added to the cart. bellow the products list it'll ask the buyer "which product do you want to remove?" the number the buyer enter that product will be removed
+from the cart.
+ 
+3.3.add to wishlist:if the buyer chooses this option it'll show all the  products that he has added to the wishlist. in the bellow there will be a question "do you want to buy any products?" if the buyer enter any number that product will
+be added to the cart list and also be removed from the wishlist.
+
+3.4.search and filter: first ask the buyer "enter the product name that you want to buy:". search for the name of the product in the product cataloge csv file. if the program finds the product then show the details of the product or if not 
+then display "the product is not found."
+ 
+3.5.generate a bill: here the program will just print out the total bill which will be found on the "add to cart system"
+
+3.6.in stock and out of stock system: if the number of  the product is zero in the csv file then display "the product is out of stock." 
+
+3.7.update stock option: (this option will be in the administrator function.) 
+
+these options will be sorted in number. and at the end the program will ask the use which option he wants to choose. there will be fuction for all the options and which ever option the user chooses
+the program will that fuction and perform the fuctionalities of that fuction. 
